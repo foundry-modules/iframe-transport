@@ -1,11 +1,6 @@
+all: wrap-core minify
+
 include ../../build/modules.mk
 
 MODULE = iframe-transport
-FILENAME = ${MODULE}.js
-SOURCE = jquery.${MODULE}.js
-PRODUCTION = ${PRODUCTION_DIR}/${FILENAME}
-DEVELOPMENT = ${DEVELOPMENT_DIR}/${FILENAME}
-
-all:
-	${WRAP} -c ${SOURCE} > ${DEVELOPMENT}
-	${UGLIFYJS} ${DEVELOPMENT} > ${PRODUCTION}
+SOURCE_DIR = .
