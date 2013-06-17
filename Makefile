@@ -1,6 +1,6 @@
-all: wrap-core minify
+all: wrap-script minify-script
 
 include ../../build/modules.mk
 
 MODULE = iframe-transport
-SOURCE_DIR = .
+SOURCE_SCRIPT_FOLDER = .
